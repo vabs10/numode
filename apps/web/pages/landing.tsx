@@ -1,7 +1,9 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { ChangeEvent, FormEvent, useState } from "react"
+
 
 
 export default function Landing(){
@@ -22,9 +24,9 @@ export default function Landing(){
       className="flex flex-col h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/background.png')" }}
     >
-      {/* Navbar */}
+    
       <header className="flex justify-between items-center p-6 text-white">
-        {/* Logo */}
+    
         <Image
           src="/assets/logo.png"
           alt="NuMode logo"
@@ -32,9 +34,11 @@ export default function Landing(){
           height={128}
           // className="w-32 h-auto"
         />
+        <Link href='/login'>
         <button className="bg-white text-black px-4 py-3 rounded-lg font-medium">
           Get Started
         </button>
+        </Link>
       </header>
 
       {/* Hero Section */}

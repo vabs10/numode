@@ -17,6 +17,7 @@
     "node": ">=18"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.95.5",
     "@types/js-cookie": "^3.0.6",
     "axios": "^1.7.9",
     "js-cookie": "^3.0.5"
