@@ -1,7 +1,7 @@
 "use client"
 import "../styles/globals.css";
 import axios, { AxiosError } from "axios";
-import { useState, FormEvent, useRef } from "react";
+import React, { useState, FormEvent, useRef } from "react";
 import Cookies from "js-cookie";
  
 
@@ -242,11 +242,21 @@ export default function Login(): JSX.Element {
               <button
                 type="button"
                 onClick={handleVerifyEmail} // Validate email before showing OTP
-                className="mt-10 w-full flex justify-center py-3 px-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-[#800020] hover:bg-[#3d000f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                className="mt-5 w-full flex justify-center py-3 px-2 border border-transparent rounded-md shadow-sm text-md font-medium text-white bg-[#800020] hover:bg-[#3d000f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
               >
                 Verify Email
               </button>
+              
             </div>
+            
+            <div className="flex justify-center">
+              <button className="flex items-center gap-2  ">
+                <img src="mailicon.png" alt="Mail icon" />
+                Login/Signup with email
+              </button>
+            </div>
+
+               
           </div>
         </div>
       </main>
