@@ -248,9 +248,9 @@ export default function Login(): JSX.Element {
               </button>
               
             </div>
-            
+
             <div className="flex justify-center">
-              <button className="flex items-center gap-2  ">
+              <button className="flex font-medium items-center gap-2  ">
                 <img src="mailicon.png" alt="Mail icon" />
                 Login/Signup with email
               </button>
